@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta name="google-site-verification" content="L64qkrA1R_cuwMBpc2RWxkyEyYn7YUDZK-GtQaHyNf4" />
 
 <meta charset="UTF-8">
@@ -264,7 +266,7 @@ color:black;
 transform:translateY(-10px);
 }
 
-/* ===== IMAGES ===== */
+/* ===== GALLERY ===== */
 
 .gallery{
 display:grid;
@@ -297,6 +299,49 @@ margin:auto;
 width:100%;
 border-radius:25px;
 box-shadow:0 0 30px rgba(255,215,0,0.4);
+}
+
+/* ===== DIRECTOR ===== */
+
+.director-box{
+max-width:900px;
+margin:auto;
+background:rgba(255,255,255,0.05);
+padding:40px;
+border-radius:25px;
+text-align:center;
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+}
+
+.director-tag{
+width:320px;
+max-width:100%;
+margin-bottom:25px;
+}
+
+.director-photo{
+width:260px;
+height:260px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #FFD700;
+box-shadow:0 0 30px rgba(255,215,0,0.5);
+margin-bottom:25px;
+}
+
+.director-box h3{
+font-size:32px;
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.director-box p{
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+max-width:700px;
+margin:auto;
 }
 
 /* ===== FORM ===== */
@@ -434,14 +479,13 @@ font-size:35px;
 
 <body>
 
+<!-- ===== NAVBAR ===== -->
+
 <nav>
 
 <div class="logo-box">
-
 <img src="logo.jpeg">
-
 <h1>Chandel Academy</h1>
-
 </div>
 
 <ul>
@@ -453,6 +497,8 @@ font-size:35px;
 </ul>
 
 </nav>
+
+<!-- ===== HERO ===== -->
 
 <section class="hero">
 
@@ -476,6 +522,8 @@ Join Now
 
 </section>
 
+<!-- ===== CLASSES ===== -->
+
 <section>
 
 <h2 class="title">Classes & Boards</h2>
@@ -484,43 +532,61 @@ Join Now
 
 <div class="feature-card">
 <h3>📚 CLASSES</h3>
-<p>
-1st to 12th <br>
-(All Subjects)
-</p>
+<p>1st to 12th <br>(All Subjects)</p>
 </div>
 
 <div class="feature-card">
 <h3>⏰ 3 HOUR DAILY CLASSES</h3>
-<p>
-Regular practice, revision and doubt solving sessions.
-</p>
+<p>Regular practice, revision and doubt solving sessions.</p>
 </div>
 
 <div class="feature-card">
 <h3>🏫 BOARDS</h3>
-<p>
-CBSE <br>
-ICSE <br>
-STATE BOARD
-</p>
+<p>CBSE <br> ICSE <br> STATE BOARD</p>
 </div>
 
 </div>
 
 </section>
+
+<!-- ===== ACADEMY IMAGE ===== -->
 
 <section>
 
 <h2 class="title">Our Academy</h2>
 
 <div class="school-image">
-
 <img src="coachingimage.html.jpeg">
+</div>
+
+</section>
+
+<!-- ===== DIRECTOR ===== -->
+
+<section>
+
+<h2 class="title">Director</h2>
+
+<div class="director-box">
+
+<img src="director1.jpeg" class="director-tag">
+
+<br>
+
+<img src="director.jpeg" class="director-photo">
+
+<h3>Aakash Chandel</h3>
+
+<p>
+Director of Chandel Academy dedicated to providing quality education,
+strong guidance and better future opportunities for every student.
+</p>
 
 </div>
 
 </section>
+
+<!-- ===== ABOUT ===== -->
 
 <section id="about">
 
@@ -558,6 +624,8 @@ Our mission is to help every student achieve academic excellence with confidence
 
 </section>
 
+<!-- ===== SUBJECTS ===== -->
+
 <section id="subjects">
 
 <h2 class="title">Subjects We Teach</h2>
@@ -593,6 +661,8 @@ Our mission is to help every student achieve academic excellence with confidence
 
 </section>
 
+<!-- ===== ACADEMY VIEW ===== -->
+
 <section>
 
 <h2 class="title">Academy View</h2>
@@ -608,65 +678,7 @@ Our mission is to help every student achieve academic excellence with confidence
 
 </section>
 
-<!-- ===== DIRECTOR SECTION ===== -->
-
-<section>
-
-<h2 class="title">Director</h2>
-
-<div style="
-max-width:900px;
-margin:auto;
-background:rgba(255,255,255,0.05);
-padding:40px;
-border-radius:25px;
-text-align:center;
-border:1px solid rgba(255,255,255,0.1);
-backdrop-filter:blur(10px);
-">
-
-<img src="director1.jpeg" 
-style="
-width:300px;
-max-width:100%;
-margin-bottom:25px;
-">
-
-<br>
-
-<img src="director.jpeg" 
-style="
-width:260px;
-height:260px;
-object-fit:cover;
-border-radius:50%;
-border:5px solid #FFD700;
-box-shadow:0 0 30px rgba(255,215,0,0.5);
-margin-bottom:25px;
-">
-
-<h3 style="
-font-size:32px;
-color:#FFD700;
-margin-bottom:15px;
-">
-Aakash Chandel
-</h3>
-
-<p style="
-font-size:18px;
-line-height:1.8;
-color:#ddd;
-max-width:700px;
-margin:auto;
-">
-Director of Chandel Academy dedicated to providing quality education,
-strong guidance and better future opportunities for every student.
-</p>
-
-</div>
-
-</section>
+<!-- ===== FACILITIES ===== -->
 
 <section>
 
@@ -689,6 +701,8 @@ strong guidance and better future opportunities for every student.
 </div>
 
 </section>
+
+<!-- ===== IIT JEE / NEET ===== -->
 
 <section>
 
@@ -724,6 +738,8 @@ strong guidance and better future opportunities for every student.
 
 </section>
 
+<!-- ===== MAP ===== -->
+
 <section id="map">
 
 <h2 class="title">Find Us On Google Map</h2>
@@ -741,28 +757,15 @@ loading="lazy">
 
 </div>
 
-<div style="text-align:center; margin-top:30px;">
-
-<a 
-href="https://www.google.com/maps/search/?api=1&query=NS-59+Sigma-1+Greater+Noida"
-target="_blank"
-class="btn">
-
-Get Directions
-
-</a>
-
-</div>
-
 </section>
+
+<!-- ===== REGISTRATION ===== -->
 
 <section id="register">
 
 <h2 class="title">Student Registration</h2>
 
-<form 
-action="https://formsubmit.co/chandelacademygr.noida@gmail.com" 
-method="POST">
+<form action="https://formsubmit.co/chandelacademygr.noida@gmail.com" method="POST">
 
 <input type="hidden" name="_captcha" value="false">
 
@@ -792,6 +795,8 @@ Submit Registration
 
 </section>
 
+<!-- ===== CONTACT ===== -->
+
 <section id="contact" class="contact">
 
 <h2 class="title">Contact Us</h2>
@@ -810,13 +815,13 @@ Submit Registration
 
 </section>
 
+<!-- ===== FOOTER ===== -->
+
 <footer>
-
-<p>
-© 2026 Chandel Academy | All Rights Reserved
-</p>
-
+<p>© 2026 Chandel Academy | All Rights Reserved</p>
 </footer>
+
+<!-- ===== WHATSAPP ===== -->
 
 <a href="https://wa.me/919761605359" class="whatsapp">
 💬
