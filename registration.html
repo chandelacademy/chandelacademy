@@ -1,27 +1,45 @@
-<!-- ===== STUDENT REGISTRATION ===== -->
+<!-- ===== PREMIUM STUDENT REGISTRATION ===== -->
 
 <section id="register">
 
-<h2 class="title">Student Registration</h2>
+<div class="registration-wrapper">
 
-<div class="registration-container">
+<!-- ===== LOGO HEADER ===== -->
 
-<div class="registration-header">
+<div class="registration-brand">
 
-<h3>🎓 Join Chandel Academy</h3>
+<div class="registration-logo">
 
-<p>
-Please fill in the details below carefully to complete your registration.
+<img src="logo.jpeg" alt="Chandel Academy Logo">
+
+</div>
+
+<h2>Chandel Academy</h2>
+
+<p class="brand-tagline">
+Learn • Improve • Achieve
+</p>
+
+<div class="brand-line"></div>
+
+<h3>🎓 Student Registration Form</h3>
+
+<p class="brand-description">
+Please fill in the details carefully to register with Chandel Academy.
 </p>
 
 </div>
 
 
+<!-- ===== FORM CARD ===== -->
+
+<div class="registration-card">
+
 <form
 action="https://formsubmit.co/chandelacademygr.noida@gmail.com"
 method="POST">
 
-<!-- ===== FORMSUBMIT SETTINGS ===== -->
+<!-- FormSubmit Settings -->
 
 <input type="hidden" name="_captcha" value="false">
 
@@ -32,20 +50,26 @@ type="hidden"
 name="_subject"
 value="New Student Registration - Chandel Academy">
 
-<input
-type="hidden"
-name="_next"
-value="https://chandelacademy.github.io/">
 
 <!-- ===== STUDENT INFORMATION ===== -->
 
-<h3 class="form-heading">👨‍🎓 Student Information</h3>
+<div class="form-section-title">
+
+<span>👨‍🎓</span>
+
+<div>
+<h3>Student Information</h3>
+<p>Basic details of the student</p>
+</div>
+
+</div>
+
 
 <div class="form-grid">
 
 <div class="form-group">
 
-<label>Student Name *</label>
+<label>Student Name <span>*</span></label>
 
 <input
 type="text"
@@ -58,7 +82,7 @@ required>
 
 <div class="form-group">
 
-<label>Registration Date *</label>
+<label>Registration Date <span>*</span></label>
 
 <input
 type="date"
@@ -70,7 +94,7 @@ required>
 
 <div class="form-group">
 
-<label>Date of Birth *</label>
+<label>Date of Birth <span>*</span></label>
 
 <input
 type="date"
@@ -82,7 +106,7 @@ required>
 
 <div class="form-group">
 
-<label>Gender *</label>
+<label>Gender <span>*</span></label>
 
 <select name="Gender" required>
 
@@ -101,7 +125,7 @@ required>
 
 <div class="form-group">
 
-<label>Class *</label>
+<label>Class <span>*</span></label>
 
 <select name="Class" required>
 
@@ -127,7 +151,7 @@ required>
 
 <div class="form-group">
 
-<label>Board *</label>
+<label>Board <span>*</span></label>
 
 <select name="Board" required>
 
@@ -148,13 +172,23 @@ required>
 
 <!-- ===== PARENTS INFORMATION ===== -->
 
-<h3 class="form-heading">👨‍👩‍👦 Parents Information</h3>
+<div class="form-section-title">
+
+<span>👨‍👩‍👦</span>
+
+<div>
+<h3>Parents Information</h3>
+<p>Parent / guardian details</p>
+</div>
+
+</div>
+
 
 <div class="form-grid">
 
 <div class="form-group">
 
-<label>Father's Name *</label>
+<label>Father's Name <span>*</span></label>
 
 <input
 type="text"
@@ -179,7 +213,7 @@ placeholder="Father's Occupation">
 
 <div class="form-group">
 
-<label>Mother's Name *</label>
+<label>Mother's Name <span>*</span></label>
 
 <input
 type="text"
@@ -206,18 +240,28 @@ placeholder="Mother's Occupation">
 
 <!-- ===== CONTACT INFORMATION ===== -->
 
-<h3 class="form-heading">📞 Contact Information</h3>
+<div class="form-section-title">
+
+<span>📞</span>
+
+<div>
+<h3>Contact Information</h3>
+<p>Contact and school details</p>
+</div>
+
+</div>
+
 
 <div class="form-grid">
 
 <div class="form-group">
 
-<label>Mobile Number *</label>
+<label>Mobile Number <span>*</span></label>
 
 <input
 type="tel"
 name="Mobile Number"
-placeholder="Enter 10 Digit Mobile Number"
+placeholder="10 Digit Mobile Number"
 pattern="[0-9]{10}"
 maxlength="10"
 required>
@@ -227,7 +271,7 @@ required>
 
 <div class="form-group">
 
-<label>School Name *</label>
+<label>School Name <span>*</span></label>
 
 <input
 type="text"
@@ -240,9 +284,9 @@ required>
 </div>
 
 
-<div class="form-group full-width">
+<div class="form-group">
 
-<label>Full Address *</label>
+<label>Full Address <span>*</span></label>
 
 <textarea
 name="Address"
@@ -255,7 +299,17 @@ required></textarea>
 
 <!-- ===== ACADEMIC INFORMATION ===== -->
 
-<h3 class="form-heading">📚 Academic Information</h3>
+<div class="form-section-title">
+
+<span>📚</span>
+
+<div>
+<h3>Academic Information</h3>
+<p>Student's academic performance</p>
+</div>
+
+</div>
+
 
 <div class="form-grid">
 
@@ -285,7 +339,7 @@ placeholder="e.g. Science">
 </div>
 
 
-<div class="form-group full-width">
+<div class="form-group">
 
 <label>Past Result / Previous Marks</label>
 
@@ -299,78 +353,98 @@ placeholder="Enter previous class result or marks"></textarea>
 
 <!-- ===== MAIN REASON ===== -->
 
-<h3 class="form-heading">
-🎯 Main Reason for Taking Academy
-</h3>
+<div class="form-section-title">
 
-<div class="reason-box">
+<span>🎯</span>
 
-<label class="checkbox-option">
+<div>
+<h3>Main Reason for Joining</h3>
+<p>Select the reason for taking Academy classes</p>
+</div>
+
+</div>
+
+
+<div class="reason-grid">
+
+<label class="reason-item">
 
 <input
 type="checkbox"
 name="Reason"
 value="Basic Concepts Improve">
 
+<span class="check-box">✓</span>
+
 <span>Basic Concepts Improve</span>
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-item">
 
 <input
 type="checkbox"
 name="Reason"
 value="School Exam Preparation">
 
+<span class="check-box">✓</span>
+
 <span>School Exam Preparation</span>
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-item">
 
 <input
 type="checkbox"
 name="Reason"
 value="Board Exam Preparation">
 
+<span class="check-box">✓</span>
+
 <span>Board Exam Preparation</span>
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-item">
 
 <input
 type="checkbox"
 name="Reason"
 value="Marks Improve">
 
+<span class="check-box">✓</span>
+
 <span>Marks Improve</span>
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-item">
 
 <input
 type="checkbox"
 name="Reason"
 value="Homework/Regular Study">
 
+<span class="check-box">✓</span>
+
 <span>Homework / Regular Study</span>
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-item">
 
 <input
 type="checkbox"
 name="Reason"
 value="Competitive Preparation">
+
+<span class="check-box">✓</span>
 
 <span>Competitive Preparation</span>
 
@@ -379,21 +453,22 @@ value="Competitive Preparation">
 </div>
 
 
-<!-- ===== SUBMIT BUTTON ===== -->
+<!-- ===== SUBMIT ===== -->
 
 <button
 type="submit"
-class="registration-btn">
+class="premium-submit">
 
-🚀 Submit Registration
+<span>🚀</span>
+
+Submit Registration
 
 </button>
 
 
-<p class="form-note">
+<p class="secure-text">
 
-🔒 Your information is safe and will be used only for
-Chandel Academy registration purposes.
+🔒 Your information is securely submitted to Chandel Academy.
 
 </p>
 
@@ -401,35 +476,27 @@ Chandel Academy registration purposes.
 
 </div>
 
+</div>
+
 </section>
 
 
-<!-- ===== REGISTRATION FORM CSS ===== -->
+<!-- ===== PREMIUM REGISTRATION CSS ===== -->
 
 <style>
 
-.registration-container{
+.registration-wrapper{
 
-max-width:900px;
+max-width:1000px;
 
 margin:auto;
-
-background:rgba(255,255,255,0.05);
-
-padding:45px;
-
-border-radius:25px;
-
-border:1px solid rgba(255,255,255,0.1);
-
-backdrop-filter:blur(12px);
-
-box-shadow:0 0 35px rgba(255,215,0,0.12);
 
 }
 
 
-.registration-header{
+/* ===== BRAND ===== */
+
+.registration-brand{
 
 text-align:center;
 
@@ -437,41 +504,197 @@ margin-bottom:35px;
 
 }
 
-.registration-header h3{
 
-font-size:30px;
+.registration-logo{
+
+width:105px;
+
+height:105px;
+
+margin:0 auto 15px;
+
+padding:8px;
+
+background:white;
+
+border-radius:50%;
+
+box-shadow:
+0 0 15px rgba(255,215,0,0.5),
+0 0 40px rgba(255,215,0,0.2);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+
+.registration-logo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:contain;
+
+border-radius:50%;
+
+}
+
+
+.registration-brand h2{
+
+font-size:38px;
 
 color:#FFD700;
 
-margin-bottom:10px;
-
-}
-
-.registration-header p{
-
-color:#ccc;
-
-font-size:16px;
+margin-bottom:3px;
 
 }
 
 
-.form-heading{
+.brand-tagline{
+
+font-size:15px;
+
+letter-spacing:3px;
+
+color:#aaa;
+
+}
+
+
+.brand-line{
+
+width:80px;
+
+height:3px;
+
+background:#FFD700;
+
+margin:15px auto;
+
+border-radius:10px;
+
+}
+
+
+.registration-brand h3{
+
+font-size:28px;
+
+color:white;
+
+margin-top:15px;
+
+}
+
+
+.brand-description{
+
+color:#aaa;
+
+margin-top:8px;
+
+font-size:15px;
+
+}
+
+
+/* ===== CARD ===== */
+
+.registration-card{
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,0.07),
+rgba(255,255,255,0.025)
+);
+
+padding:45px;
+
+border-radius:28px;
+
+border:1px solid rgba(255,215,0,0.18);
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,0.3),
+
+0 0 35px rgba(255,215,0,0.08);
+
+backdrop-filter:blur(15px);
+
+}
+
+
+/* ===== SECTION TITLE ===== */
+
+.form-section-title{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+margin:10px 0 25px;
+
+padding-bottom:14px;
+
+border-bottom:1px solid rgba(255,215,0,0.18);
+
+}
+
+
+.form-section-title > span{
+
+width:48px;
+
+height:48px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:rgba(255,215,0,0.1);
+
+border:1px solid rgba(255,215,0,0.25);
+
+border-radius:14px;
+
+font-size:23px;
+
+}
+
+
+.form-section-title h3{
 
 color:#FFD700;
 
-font-size:22px;
+font-size:21px;
 
-margin-top:30px;
-
-margin-bottom:20px;
-
-padding-bottom:10px;
-
-border-bottom:1px solid rgba(255,215,0,0.2);
+margin-bottom:3px;
 
 }
 
+
+.form-section-title p{
+
+font-size:12px;
+
+color:#888;
+
+}
+
+
+/* ===== GRID ===== */
 
 .form-grid{
 
@@ -486,7 +709,7 @@ gap:20px;
 
 .form-group{
 
-margin-bottom:18px;
+margin-bottom:20px;
 
 }
 
@@ -495,11 +718,20 @@ margin-bottom:18px;
 
 display:block;
 
-color:#fff;
+font-size:14px;
 
 font-weight:500;
 
+color:#eee;
+
 margin-bottom:8px;
+
+}
+
+
+.form-group label span{
+
+color:#FFD700;
 
 }
 
@@ -510,23 +742,29 @@ margin-bottom:8px;
 
 width:100%;
 
-padding:14px;
+padding:15px 16px;
 
-border:none;
+background:rgba(0,0,0,0.22);
+
+border:1px solid rgba(255,255,255,0.12);
+
+border-radius:13px;
 
 outline:none;
 
-border-radius:12px;
-
-background:rgba(255,255,255,0.08);
-
 color:white;
 
-font-size:15px;
-
-border:1px solid rgba(255,255,255,0.1);
+font-size:14px;
 
 transition:0.3s;
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+color:#777;
 
 }
 
@@ -537,7 +775,7 @@ transition:0.3s;
 
 border-color:#FFD700;
 
-box-shadow:0 0 10px rgba(255,215,0,0.2);
+box-shadow:0 0 15px rgba(255,215,0,0.12);
 
 }
 
@@ -555,48 +793,45 @@ color:white;
 
 resize:vertical;
 
-}
-
-
-.full-width{
-
-width:100%;
+min-height:100px;
 
 }
 
 
-.reason-box{
+/* ===== REASON ===== */
+
+.reason-grid{
 
 display:grid;
 
 grid-template-columns:1fr 1fr;
 
-gap:15px;
+gap:12px;
 
-padding:20px;
-
-background:rgba(255,255,255,0.04);
-
-border-radius:15px;
-
-border:1px solid rgba(255,255,255,0.08);
+margin-bottom:25px;
 
 }
 
 
-.checkbox-option{
+.reason-item{
 
 display:flex;
 
 align-items:center;
 
-gap:10px;
+gap:12px;
 
-padding:13px;
+padding:15px;
 
-border-radius:10px;
+border-radius:13px;
 
-background:rgba(255,255,255,0.05);
+background:rgba(255,255,255,0.035);
+
+border:1px solid rgba(255,255,255,0.08);
+
+color:#ddd;
+
+font-size:14px;
 
 cursor:pointer;
 
@@ -605,82 +840,118 @@ transition:0.3s;
 }
 
 
-.checkbox-option:hover{
+.reason-item:hover{
 
-background:rgba(255,215,0,0.12);
+border-color:rgba(255,215,0,0.5);
 
-}
-
-
-.checkbox-option input{
-
-width:18px;
-
-height:18px;
-
-accent-color:#FFD700;
-
-cursor:pointer;
+background:rgba(255,215,0,0.07);
 
 }
 
 
-.checkbox-option span{
+.reason-item input{
 
-font-size:15px;
-
-color:#ddd;
+display:none;
 
 }
 
 
-.registration-btn{
+.check-box{
 
-width:100%;
+width:20px;
 
-padding:17px;
+height:20px;
 
-margin-top:30px;
+border:2px solid #777;
 
-border:none;
+border-radius:5px;
 
-border-radius:14px;
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:13px;
+
+color:transparent;
+
+transition:0.3s;
+
+}
+
+
+.reason-item input:checked + .check-box{
 
 background:#FFD700;
 
+border-color:#FFD700;
+
 color:#000;
 
-font-size:19px;
+}
+
+
+/* ===== BUTTON ===== */
+
+.premium-submit{
+
+width:100%;
+
+border:none;
+
+outline:none;
+
+padding:17px;
+
+margin-top:15px;
+
+border-radius:14px;
+
+background:linear-gradient(135deg,#FFD700,#ffb700);
+
+color:#000;
+
+font-size:18px;
 
 font-weight:700;
 
 cursor:pointer;
 
-transition:0.3s;
+box-shadow:0 10px 25px rgba(255,215,0,0.2);
 
-box-shadow:0 0 25px rgba(255,215,0,0.3);
+transition:0.3s;
 
 }
 
 
-.registration-btn:hover{
+.premium-submit:hover{
 
 transform:translateY(-3px);
 
-box-shadow:0 0 35px rgba(255,215,0,0.5);
+box-shadow:0 15px 35px rgba(255,215,0,0.35);
 
 }
 
 
-.form-note{
+.premium-submit span{
+
+margin-right:8px;
+
+}
+
+
+/* ===== SECURITY TEXT ===== */
+
+.secure-text{
 
 text-align:center;
 
-color:#aaa;
+color:#777;
 
-font-size:13px;
+font-size:12px;
 
-margin-top:18px;
+margin-top:17px;
 
 }
 
@@ -689,37 +960,53 @@ margin-top:18px;
 
 @media(max-width:768px){
 
-.registration-container{
+.registration-card{
 
 padding:25px 18px;
 
+border-radius:20px;
+
 }
+
+
+.registration-brand h2{
+
+font-size:30px;
+
+}
+
+
+.registration-brand h3{
+
+font-size:22px;
+
+}
+
 
 .form-grid{
 
 grid-template-columns:1fr;
 
-gap:5px;
+gap:0;
 
 }
 
-.reason-box{
+
+.reason-grid{
 
 grid-template-columns:1fr;
 
 }
 
-.registration-header h3{
 
-font-size:24px;
+.registration-logo{
 
-}
+width:90px;
 
-.form-heading{
-
-font-size:19px;
+height:90px;
 
 }
+
 
 }
 
