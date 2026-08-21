@@ -1,726 +1,311 @@
-<!-- ===== STUDENT REGISTRATION ===== -->
+<!-- ===== REGISTRATION ===== -->
 
 <section id="register">
 
 <h2 class="title">Student Registration</h2>
 
-<div class="registration-container">
-
-<div class="registration-header">
-
-<h3>🎓 Join Chandel Academy</h3>
-
-<p>
-Please fill in the details below carefully to complete your registration.
-</p>
-
-</div>
-
-
 <form
 action="https://formsubmit.co/chandelacademygr.noida@gmail.com"
 method="POST">
 
-<!-- ===== FORMSUBMIT SETTINGS ===== -->
 
-<input type="hidden" name="_captcha" value="false">
+<input
+type="hidden"
+name="_captcha"
+value="false">
 
-<input type="hidden" name="_template" value="table">
+
+<input
+type="hidden"
+name="_template"
+value="table">
+
 
 <input
 type="hidden"
 name="_subject"
 value="New Student Registration - Chandel Academy">
 
-<input
-type="hidden"
-name="_next"
-value="https://chandelacademy.github.io/">
 
-<!-- ===== STUDENT INFORMATION ===== -->
+<!-- REGISTRATION DATE -->
 
-<h3 class="form-heading">👨‍🎓 Student Information</h3>
-
-<div class="form-grid">
-
-<div class="form-group">
-
-<label>Student Name *</label>
-
-<input
-type="text"
-name="Student Name"
-placeholder="Enter Student Name"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Registration Date *</label>
+<label class="form-label">
+Registration Date
+</label>
 
 <input
 type="date"
 name="Registration Date"
 required>
 
-</div>
+
+<!-- STUDENT NAME -->
+
+<input
+type="text"
+name="Student Name"
+placeholder="Student Name"
+required>
 
 
-<div class="form-group">
+<!-- DATE OF BIRTH -->
 
-<label>Date of Birth *</label>
+<label class="form-label">
+Date of Birth
+</label>
 
 <input
 type="date"
 name="Date of Birth"
 required>
 
-</div>
 
+<!-- GENDER -->
 
-<div class="form-group">
+<select
+name="Gender"
+required>
 
-<label>Gender *</label>
+<option value="">
+Select Gender
+</option>
 
-<select name="Gender" required>
+<option value="Male">
+Male
+</option>
 
-<option value="">Select Gender</option>
+<option value="Female">
+Female
+</option>
 
-<option value="Male">Male</option>
-
-<option value="Female">Female</option>
-
-<option value="Other">Other</option>
-
-</select>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Class *</label>
-
-<select name="Class" required>
-
-<option value="">Select Class</option>
-
-<option value="Class 1">Class 1</option>
-<option value="Class 2">Class 2</option>
-<option value="Class 3">Class 3</option>
-<option value="Class 4">Class 4</option>
-<option value="Class 5">Class 5</option>
-<option value="Class 6">Class 6</option>
-<option value="Class 7">Class 7</option>
-<option value="Class 8">Class 8</option>
-<option value="Class 9">Class 9</option>
-<option value="Class 10">Class 10</option>
-<option value="Class 11">Class 11</option>
-<option value="Class 12">Class 12</option>
+<option value="Other">
+Other
+</option>
 
 </select>
 
-</div>
+
+<!-- CLASS -->
+
+<input
+type="text"
+name="Class"
+placeholder="Class"
+required>
 
 
-<div class="form-group">
+<!-- BOARD -->
 
-<label>Board *</label>
+<select
+name="Board"
+required>
 
-<select name="Board" required>
+<option value="">
+Select Board
+</option>
 
-<option value="">Select Board</option>
+<option value="CBSE">
+CBSE
+</option>
 
-<option value="CBSE">CBSE</option>
+<option value="ICSE">
+ICSE
+</option>
 
-<option value="ICSE">ICSE</option>
-
-<option value="UP Board">UP Board</option>
+<option value="UP Board">
+UP Board
+</option>
 
 </select>
 
-</div>
 
-</div>
-
-
-<!-- ===== PARENTS INFORMATION ===== -->
-
-<h3 class="form-heading">👨‍👩‍👦 Parents Information</h3>
-
-<div class="form-grid">
-
-<div class="form-group">
-
-<label>Father's Name *</label>
+<!-- FATHER NAME -->
 
 <input
 type="text"
 name="Father Name"
-placeholder="Enter Father's Name"
+placeholder="Father's Name"
 required>
 
-</div>
 
-
-<div class="form-group">
-
-<label>Father's Occupation</label>
+<!-- FATHER OCCUPATION -->
 
 <input
 type="text"
 name="Father Occupation"
-placeholder="Father's Occupation">
+placeholder="Father's Occupation"
+required>
 
-</div>
 
-
-<div class="form-group">
-
-<label>Mother's Name *</label>
+<!-- MOTHER NAME -->
 
 <input
 type="text"
 name="Mother Name"
-placeholder="Enter Mother's Name"
+placeholder="Mother's Name"
 required>
 
-</div>
 
-
-<div class="form-group">
-
-<label>Mother's Occupation</label>
+<!-- MOTHER OCCUPATION -->
 
 <input
 type="text"
 name="Mother Occupation"
-placeholder="Mother's Occupation">
-
-</div>
-
-</div>
+placeholder="Mother's Occupation"
+required>
 
 
-<!-- ===== CONTACT INFORMATION ===== -->
-
-<h3 class="form-heading">📞 Contact Information</h3>
-
-<div class="form-grid">
-
-<div class="form-group">
-
-<label>Mobile Number *</label>
+<!-- MOBILE NUMBER -->
 
 <input
 type="tel"
 name="Mobile Number"
-placeholder="Enter 10 Digit Mobile Number"
+placeholder="Mobile Number"
 pattern="[0-9]{10}"
 maxlength="10"
 required>
 
-</div>
 
-
-<div class="form-group">
-
-<label>School Name *</label>
+<!-- SCHOOL NAME -->
 
 <input
 type="text"
 name="School Name"
-placeholder="Enter School Name"
+placeholder="School Name"
 required>
 
-</div>
 
-</div>
-
-
-<div class="form-group full-width">
-
-<label>Full Address *</label>
+<!-- ADDRESS -->
 
 <textarea
-name="Address"
 rows="4"
-placeholder="Enter Complete Address"
+name="Student Address"
+placeholder="Student Address"
 required></textarea>
 
-</div>
 
-
-<!-- ===== ACADEMIC INFORMATION ===== -->
-
-<h3 class="form-heading">📚 Academic Information</h3>
-
-<div class="form-grid">
-
-<div class="form-group">
-
-<label>Strong Subject</label>
+<!-- STRONG SUBJECT -->
 
 <input
 type="text"
 name="Strong Subject"
-placeholder="e.g. Mathematics">
+placeholder="Strong Subject"
+required>
 
-</div>
 
-
-<div class="form-group">
-
-<label>Weak Subject</label>
+<!-- WEAK SUBJECT -->
 
 <input
 type="text"
 name="Weak Subject"
-placeholder="e.g. Science">
-
-</div>
-
-</div>
+placeholder="Weak Subject"
+required>
 
 
-<div class="form-group full-width">
-
-<label>Past Result / Previous Marks</label>
+<!-- PAST RESULT -->
 
 <textarea
+rows="5"
 name="Past Result"
-rows="4"
-placeholder="Enter previous class result or marks"></textarea>
-
-</div>
+placeholder="Past Result"></textarea>
 
 
-<!-- ===== MAIN REASON ===== -->
+<!-- MAIN REASON -->
 
-<h3 class="form-heading">
-🎯 Main Reason for Taking Academy
-</h3>
+<label class="form-label">
+
+The Main Reason for Taking Academy:
+
+</label>
+
 
 <div class="reason-box">
 
-<label class="checkbox-option">
+
+<label class="reason-option">
 
 <input
 type="checkbox"
-name="Reason"
+name="Main Reason"
 value="Basic Concepts Improve">
 
-<span>Basic Concepts Improve</span>
+Basic Concepts Improve
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-option">
 
 <input
 type="checkbox"
-name="Reason"
+name="Main Reason"
 value="School Exam Preparation">
 
-<span>School Exam Preparation</span>
+School Exam Preparation
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-option">
 
 <input
 type="checkbox"
-name="Reason"
+name="Main Reason"
 value="Board Exam Preparation">
 
-<span>Board Exam Preparation</span>
+Board Exam Preparation
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-option">
 
 <input
 type="checkbox"
-name="Reason"
+name="Main Reason"
 value="Marks Improve">
 
-<span>Marks Improve</span>
+Marks Improve
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-option">
 
 <input
 type="checkbox"
-name="Reason"
+name="Main Reason"
 value="Homework/Regular Study">
 
-<span>Homework / Regular Study</span>
+Homework/Regular Study
 
 </label>
 
 
-<label class="checkbox-option">
+<label class="reason-option">
 
 <input
 type="checkbox"
-name="Reason"
+name="Main Reason"
 value="Competitive Preparation">
 
-<span>Competitive Preparation</span>
+Competitive Preparation
 
 </label>
+
 
 </div>
 
 
-<!-- ===== SUBMIT BUTTON ===== -->
+<!-- SUBMIT -->
 
-<button
-type="submit"
-class="registration-btn">
+<button type="submit">
 
-🚀 Submit Registration
+Submit Registration
 
 </button>
 
 
-<p class="form-note">
-
-🔒 Your information is safe and will be used only for
-Chandel Academy registration purposes.
-
-</p>
-
 </form>
 
-</div>
-
 </section>
-
-
-<!-- ===== REGISTRATION FORM CSS ===== -->
-
-<style>
-
-.registration-container{
-
-max-width:900px;
-
-margin:auto;
-
-background:rgba(255,255,255,0.05);
-
-padding:45px;
-
-border-radius:25px;
-
-border:1px solid rgba(255,255,255,0.1);
-
-backdrop-filter:blur(12px);
-
-box-shadow:0 0 35px rgba(255,215,0,0.12);
-
-}
-
-
-.registration-header{
-
-text-align:center;
-
-margin-bottom:35px;
-
-}
-
-.registration-header h3{
-
-font-size:30px;
-
-color:#FFD700;
-
-margin-bottom:10px;
-
-}
-
-.registration-header p{
-
-color:#ccc;
-
-font-size:16px;
-
-}
-
-
-.form-heading{
-
-color:#FFD700;
-
-font-size:22px;
-
-margin-top:30px;
-
-margin-bottom:20px;
-
-padding-bottom:10px;
-
-border-bottom:1px solid rgba(255,215,0,0.2);
-
-}
-
-
-.form-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:20px;
-
-}
-
-
-.form-group{
-
-margin-bottom:18px;
-
-}
-
-
-.form-group label{
-
-display:block;
-
-color:#fff;
-
-font-weight:500;
-
-margin-bottom:8px;
-
-}
-
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-
-width:100%;
-
-padding:14px;
-
-border:none;
-
-outline:none;
-
-border-radius:12px;
-
-background:rgba(255,255,255,0.08);
-
-color:white;
-
-font-size:15px;
-
-border:1px solid rgba(255,255,255,0.1);
-
-transition:0.3s;
-
-}
-
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-
-border-color:#FFD700;
-
-box-shadow:0 0 10px rgba(255,215,0,0.2);
-
-}
-
-
-.form-group select option{
-
-background:#06111f;
-
-color:white;
-
-}
-
-
-.form-group textarea{
-
-resize:vertical;
-
-}
-
-
-.full-width{
-
-width:100%;
-
-}
-
-
-.reason-box{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:15px;
-
-padding:20px;
-
-background:rgba(255,255,255,0.04);
-
-border-radius:15px;
-
-border:1px solid rgba(255,255,255,0.08);
-
-}
-
-
-.checkbox-option{
-
-display:flex;
-
-align-items:center;
-
-gap:10px;
-
-padding:13px;
-
-border-radius:10px;
-
-background:rgba(255,255,255,0.05);
-
-cursor:pointer;
-
-transition:0.3s;
-
-}
-
-
-.checkbox-option:hover{
-
-background:rgba(255,215,0,0.12);
-
-}
-
-
-.checkbox-option input{
-
-width:18px;
-
-height:18px;
-
-accent-color:#FFD700;
-
-cursor:pointer;
-
-}
-
-
-.checkbox-option span{
-
-font-size:15px;
-
-color:#ddd;
-
-}
-
-
-.registration-btn{
-
-width:100%;
-
-padding:17px;
-
-margin-top:30px;
-
-border:none;
-
-border-radius:14px;
-
-background:#FFD700;
-
-color:#000;
-
-font-size:19px;
-
-font-weight:700;
-
-cursor:pointer;
-
-transition:0.3s;
-
-box-shadow:0 0 25px rgba(255,215,0,0.3);
-
-}
-
-
-.registration-btn:hover{
-
-transform:translateY(-3px);
-
-box-shadow:0 0 35px rgba(255,215,0,0.5);
-
-}
-
-
-.form-note{
-
-text-align:center;
-
-color:#aaa;
-
-font-size:13px;
-
-margin-top:18px;
-
-}
-
-
-/* ===== MOBILE ===== */
-
-@media(max-width:768px){
-
-.registration-container{
-
-padding:25px 18px;
-
-}
-
-.form-grid{
-
-grid-template-columns:1fr;
-
-gap:5px;
-
-}
-
-.reason-box{
-
-grid-template-columns:1fr;
-
-}
-
-.registration-header h3{
-
-font-size:24px;
-
-}
-
-.form-heading{
-
-font-size:19px;
-
-}
-
-}
-
-</style>
