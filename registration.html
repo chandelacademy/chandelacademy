@@ -1,1169 +1,869 @@
-<!-- ===== PREMIUM STUDENT REGISTRATION ===== -->
+<!DOCTYPE html>
+<html lang="en">
 
-<section id="register">
+<head>
 
-<div class="registration-wrapper">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ===== LOGO HEADER ===== -->
+<title>Chandel Academy | Student Registration</title>
 
-<div class="registration-brand">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<div class="registration-logo">
+<style>
 
-<img src="logo.jpeg" alt="Chandel Academy Logo">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#020817,#071b30,#020817);
+    color:white;
+    min-height:100vh;
+    padding:30px 15px;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 30px;
+}
+
+.logo{
+    width:95px;
+    height:95px;
+    object-fit:contain;
+    background:white;
+    padding:8px;
+    border-radius:50%;
+    box-shadow:0 0 30px rgba(255,215,0,.65);
+    margin-bottom:18px;
+}
+
+.header h1{
+    font-family:Georgia,serif;
+    font-size:46px;
+    font-weight:700;
+    color:#FFD700;
+    text-shadow:0 2px 10px rgba(255,215,0,.25);
+    margin-bottom:8px;
+}
+
+.tagline{
+    font-family:Georgia,serif;
+    font-size:20px;
+    color:#ffffff;
+    font-weight:500;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    background:#FFD700;
+    border-radius:10px;
+    margin:0 auto 18px;
+}
+
+.intro{
+    font-family:Georgia,serif;
+    font-size:18px;
+    line-height:1.7;
+    color:#ffffff;
+    max-width:700px;
+    margin:auto;
+}
+
+/* ================= FORM ================= */
+
+.form-container{
+    max-width:950px;
+    margin:auto;
+    background:#0b1b2e;
+    border:1px solid rgba(255,215,0,.25);
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 50px rgba(0,0,0,.45);
+}
+
+/* ================= SECTION ================= */
+
+.form-section{
+    margin-bottom:35px;
+}
+
+.section-title{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#FFD700;
+    font-size:21px;
+    font-weight:700;
+    margin-bottom:6px;
+}
+
+.section-icon{
+    width:40px;
+    height:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    background:rgba(255,215,0,.12);
+    font-size:20px;
+}
+
+.section-subtitle{
+    color:#ffffff;
+    font-size:13px;
+    margin-left:52px;
+    margin-bottom:18px;
+    opacity:.9;
+}
+
+.divider{
+    height:1px;
+    background:rgba(255,255,255,.12);
+    margin-bottom:22px;
+}
+
+/* ================= GRID ================= */
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.full{
+    grid-column:1 / -1;
+}
+
+/* ================= LABEL ================= */
+
+label{
+    display:block;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.required{
+    color:#FFD700;
+}
+
+/* ================= INPUT ================= */
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px 15px;
+    border:1px solid #38516b;
+    border-radius:10px;
+    outline:none;
+    background:#10263d;
+    color:#ffffff;
+    font-size:14px;
+    transition:.3s;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#b9c4d0;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#FFD700;
+    box-shadow:0 0 0 3px rgba(255,215,0,.10);
+}
+
+select{
+    cursor:pointer;
+}
+
+select option{
+    background:#10263d;
+    color:white;
+}
+
+textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+/* ================= CHECKBOX ================= */
+
+.reason-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.reason-option{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#10263d;
+    border:1px solid #38516b;
+    padding:13px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.reason-option:hover{
+    border-color:#FFD700;
+    background:#142d47;
+}
+
+.reason-option input{
+    width:18px;
+    height:18px;
+    accent-color:#FFD700;
+}
+
+.reason-option span{
+    font-size:14px;
+    color:white;
+}
+
+/* ================= BUTTON ================= */
+
+.submit-btn{
+    width:100%;
+    border:none;
+    padding:17px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#FFD700,#ffb700);
+    color:#07111f;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 25px rgba(255,215,0,.25);
+}
+
+.submit-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(255,215,0,.4);
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+    color:#d7dce2;
+    font-size:13px;
+}
+
+.footer strong{
+    color:#FFD700;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
+
+    body{
+        padding:20px 10px;
+    }
+
+    .header{
+        margin-bottom:25px;
+    }
+
+    .logo{
+        width:85px;
+        height:85px;
+    }
+
+    .header h1{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .tagline{
+        font-size:17px;
+    }
+
+    .intro{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .form-container{
+        padding:22px 16px;
+        border-radius:18px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+        gap:17px;
+    }
+
+    .full{
+        grid-column:auto;
+    }
+
+    .reason-box{
+        grid-template-columns:1fr;
+    }
+
+    .section-title{
+        font-size:19px;
+    }
+
+    label{
+        font-size:14px;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size:14px;
+        padding:13px;
+    }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:400px){
+
+    .header h1{
+        font-size:30px;
+    }
+
+    .form-container{
+        padding:18px 12px;
+    }
+
+    .section-subtitle{
+        margin-left:0;
+        margin-top:5px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<div class="header">
+
+    <img src="logo.jpeg" class="logo">
+
+    <h1>Chandel Academy</h1>
+
+    <div class="tagline">
+        Learn • Improve • Achieve
+    </div>
+
+    <div class="line"></div>
+
+    <p class="intro">
+        🎓 Please fill in the details carefully to register
+        with <strong>Chandel Academy</strong>.
+    </p>
 
 </div>
 
-<h2>Chandel Academy</h2>
 
-<p class="brand-tagline">
-Learn • Improve • Achieve
-</p>
+<!-- ================= FORM ================= -->
 
-<div class="brand-line"></div>
+<div class="form-container">
 
-<h3>🎓 Student Registration Form</h3>
+<form action="https://formsubmit.co/chandelacademygr.noida@gmail.com" method="POST">
 
-<p class="brand-description">
-Please fill in the details carefully to register with Chandel Academy.
-</p>
-
-</div>
-
-
-<!-- ===== FORM CARD ===== -->
-
-<div class="registration-card">
-
-<form
-action="https://formsubmit.co/chandelacademygr.noida@gmail.com"
-method="POST">
-
-<!-- FormSubmit Settings -->
+<!-- FORM SETTINGS -->
 
 <input type="hidden" name="_captcha" value="false">
 
 <input type="hidden" name="_template" value="table">
 
-<input
-type="hidden"
-name="_subject"
-value="New Student Registration - Chandel Academy">
+<input type="hidden" name="_subject" value="New Student Registration - Chandel Academy">
+
+<input type="hidden" name="_next" value="https://chandelacademy.github.io/chandelacademy/registration.html">
 
 
-<!-- ===== STUDENT INFORMATION ===== -->
+<!-- ================= STUDENT INFORMATION ================= -->
 
-<div class="form-section-title">
+<div class="form-section">
 
-<span>👨‍🎓</span>
+    <div class="section-title">
+        <div class="section-icon">🎓</div>
+        Student Information
+    </div>
 
-<div>
-<h3>Student Information</h3>
-<p>Basic details of the student</p>
-</div>
+    <div class="section-subtitle">
+        Basic details of the student
+    </div>
 
-</div>
+    <div class="divider"></div>
 
+    <div class="form-grid">
 
-<div class="form-grid">
+        <div>
+            <label>
+                Student Name <span class="required">*</span>
+            </label>
 
-<div class="form-group">
-
-<label>Student Name <span>*</span></label>
-
-<input
-type="text"
-name="Student Name"
-placeholder="Enter Student Name"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Registration Date <span>*</span></label>
-
-<input
-type="date"
-name="Registration Date"
-required>
-
-</div>
+            <input
+                type="text"
+                name="Student Name"
+                placeholder="Enter Student Name"
+                required>
+        </div>
 
 
-<div class="form-group">
+        <div>
+            <label>
+                Registration Date <span class="required">*</span>
+            </label>
 
-<label>Date of Birth <span>*</span></label>
-
-<input
-type="date"
-name="Date of Birth"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Gender <span>*</span></label>
-
-<select name="Gender" required>
-
-<option value="">Select Gender</option>
-
-<option value="Male">Male</option>
-
-<option value="Female">Female</option>
-
-<option value="Other">Other</option>
-
-</select>
-
-</div>
+            <input
+                type="date"
+                name="Registration Date"
+                required>
+        </div>
 
 
-<div class="form-group">
+        <div>
+            <label>
+                Date of Birth <span class="required">*</span>
+            </label>
 
-<label>Class <span>*</span></label>
-
-<select name="Class" required>
-
-<option value="">Select Class</option>
-
-<option value="Class 1">Class 1</option>
-<option value="Class 2">Class 2</option>
-<option value="Class 3">Class 3</option>
-<option value="Class 4">Class 4</option>
-<option value="Class 5">Class 5</option>
-<option value="Class 6">Class 6</option>
-<option value="Class 7">Class 7</option>
-<option value="Class 8">Class 8</option>
-<option value="Class 9">Class 9</option>
-<option value="Class 10">Class 10</option>
-<option value="Class 11">Class 11</option>
-<option value="Class 12">Class 12</option>
-
-</select>
-
-</div>
+            <input
+                type="date"
+                name="Date of Birth"
+                required>
+        </div>
 
 
-<div class="form-group">
+        <div>
+            <label>
+                Gender <span class="required">*</span>
+            </label>
 
-<label>Board <span>*</span></label>
+            <select name="Gender" required>
 
-<select name="Board" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
 
-<option value="">Select Board</option>
+            </select>
+        </div>
 
-<option value="CBSE">CBSE</option>
 
-<option value="ICSE">ICSE</option>
+        <div>
+            <label>
+                Class <span class="required">*</span>
+            </label>
 
-<option value="UP Board">UP Board</option>
+            <select name="Class" required>
 
-</select>
+                <option value="">Select Class</option>
 
-</div>
+                <option value="Class 1">Class 1</option>
+                <option value="Class 2">Class 2</option>
+                <option value="Class 3">Class 3</option>
+                <option value="Class 4">Class 4</option>
+                <option value="Class 5">Class 5</option>
+                <option value="Class 6">Class 6</option>
+                <option value="Class 7">Class 7</option>
+                <option value="Class 8">Class 8</option>
+                <option value="Class 9">Class 9</option>
+                <option value="Class 10">Class 10</option>
+                <option value="Class 11">Class 11</option>
+                <option value="Class 12">Class 12</option>
+
+            </select>
+        </div>
+
+
+        <div>
+            <label>
+                Board <span class="required">*</span>
+            </label>
+
+            <select name="Board" required>
+
+                <option value="">Select Board</option>
+                <option value="CBSE">CBSE</option>
+                <option value="ICSE">ICSE</option>
+                <option value="UP Board">UP Board</option>
+                <option value="Other">Other</option>
+
+            </select>
+        </div>
+
+    </div>
 
 </div>
 
 
-<!-- ===== PARENTS INFORMATION ===== -->
+<!-- ================= PARENTS INFORMATION ================= -->
 
-<div class="form-section-title">
+<div class="form-section">
 
-<span>👨‍👩‍👦</span>
+    <div class="section-title">
+        <div class="section-icon">👨‍👩‍👦</div>
+        Parents Information
+    </div>
 
-<div>
-<h3>Parents Information</h3>
-<p>Parent / guardian details</p>
-</div>
+    <div class="section-subtitle">
+        Parent / guardian details
+    </div>
 
-</div>
+    <div class="divider"></div>
 
+    <div class="form-grid">
 
-<div class="form-grid">
+        <div>
+            <label>
+                Father's Name <span class="required">*</span>
+            </label>
 
-<div class="form-group">
-
-<label>Father's Name <span>*</span></label>
-
-<input
-type="text"
-name="Father Name"
-placeholder="Enter Father's Name"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Father's Occupation</label>
-
-<input
-type="text"
-name="Father Occupation"
-placeholder="Father's Occupation">
-
-</div>
+            <input
+                type="text"
+                name="Father Name"
+                placeholder="Enter Father's Name"
+                required>
+        </div>
 
 
-<div class="form-group">
+        <div>
+            <label>
+                Father's Occupation
+            </label>
 
-<label>Mother's Name <span>*</span></label>
-
-<input
-type="text"
-name="Mother Name"
-placeholder="Enter Mother's Name"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Mother's Occupation</label>
-
-<input
-type="text"
-name="Mother Occupation"
-placeholder="Mother's Occupation">
-
-</div>
-
-</div>
+            <input
+                type="text"
+                name="Father Occupation"
+                placeholder="Father's Occupation">
+        </div>
 
 
-<!-- ===== CONTACT INFORMATION ===== -->
+        <div>
+            <label>
+                Mother's Name <span class="required">*</span>
+            </label>
 
-<div class="form-section-title">
+            <input
+                type="text"
+                name="Mother Name"
+                placeholder="Enter Mother's Name"
+                required>
+        </div>
 
-<span>📞</span>
 
-<div>
-<h3>Contact Information</h3>
-<p>Contact and school details</p>
-</div>
+        <div>
+            <label>
+                Mother's Occupation
+            </label>
+
+            <input
+                type="text"
+                name="Mother Occupation"
+                placeholder="Mother's Occupation">
+        </div>
+
+    </div>
 
 </div>
 
 
-<div class="form-grid">
+<!-- ================= CONTACT INFORMATION ================= -->
 
-<div class="form-group">
+<div class="form-section">
 
-<label>Mobile Number <span>*</span></label>
+    <div class="section-title">
+        <div class="section-icon">📞</div>
+        Contact Information
+    </div>
 
-<input
-type="tel"
-name="Mobile Number"
-placeholder="10 Digit Mobile Number"
-pattern="[0-9]{10}"
-maxlength="10"
-required>
+    <div class="section-subtitle">
+        Contact and school details
+    </div>
 
-</div>
+    <div class="divider"></div>
 
+    <div class="form-grid">
 
-<div class="form-group">
+        <div>
+            <label>
+                Mobile Number <span class="required">*</span>
+            </label>
 
-<label>School Name <span>*</span></label>
-
-<input
-type="text"
-name="School Name"
-placeholder="Enter School Name"
-required>
-
-</div>
-
-</div>
-
-
-<div class="form-group">
-
-<label>Full Address <span>*</span></label>
-
-<textarea
-name="Address"
-rows="4"
-placeholder="Enter Complete Address"
-required></textarea>
-
-</div>
+            <input
+                type="tel"
+                name="Mobile Number"
+                placeholder="Enter Mobile Number"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required>
+        </div>
 
 
-<!-- ===== ACADEMIC INFORMATION ===== -->
+        <div>
+            <label>
+                School Name <span class="required">*</span>
+            </label>
 
-<div class="form-section-title">
-
-<span>📚</span>
-
-<div>
-<h3>Academic Information</h3>
-<p>Student's academic performance</p>
-</div>
-
-</div>
+            <input
+                type="text"
+                name="School Name"
+                placeholder="Enter School Name"
+                required>
+        </div>
 
 
-<div class="form-grid">
+        <div class="full">
 
-<div class="form-group">
+            <label>
+                Student Address <span class="required">*</span>
+            </label>
 
-<label>Strong Subject</label>
+            <textarea
+                name="Student Address"
+                placeholder="Enter complete address"
+                required></textarea>
 
-<input
-type="text"
-name="Strong Subject"
-placeholder="e.g. Mathematics">
+        </div>
+
+    </div>
 
 </div>
 
 
-<div class="form-group">
+<!-- ================= ACADEMIC INFORMATION ================= -->
 
-<label>Weak Subject</label>
+<div class="form-section">
 
-<input
-type="text"
-name="Weak Subject"
-placeholder="e.g. Science">
+    <div class="section-title">
+        <div class="section-icon">📚</div>
+        Academic Information
+    </div>
 
-</div>
+    <div class="section-subtitle">
+        Help us understand the student's academic strengths
+    </div>
 
-</div>
+    <div class="divider"></div>
 
+    <div class="form-grid">
 
-<div class="form-group">
+        <div>
+            <label>
+                Strong Subject
+            </label>
 
-<label>Past Result / Previous Marks</label>
-
-<textarea
-name="Past Result"
-rows="4"
-placeholder="Enter previous class result or marks"></textarea>
-
-</div>
-
-
-<!-- ===== MAIN REASON ===== -->
-
-<div class="form-section-title">
-
-<span>🎯</span>
-
-<div>
-<h3>Main Reason for Joining</h3>
-<p>Select the reason for taking Academy classes</p>
-</div>
-
-</div>
+            <input
+                type="text"
+                name="Strong Subject"
+                placeholder="Example: Mathematics">
+        </div>
 
 
-<div class="reason-grid">
+        <div>
+            <label>
+                Weak Subject
+            </label>
 
-<label class="reason-item">
-
-<input
-type="checkbox"
-name="Reason"
-value="Basic Concepts Improve">
-
-<span class="check-box">✓</span>
-
-<span>Basic Concepts Improve</span>
-
-</label>
+            <input
+                type="text"
+                name="Weak Subject"
+                placeholder="Example: Science">
+        </div>
 
 
-<label class="reason-item">
+        <div class="full">
 
-<input
-type="checkbox"
-name="Reason"
-value="School Exam Preparation">
+            <label>
+                Past Result / Marks
+            </label>
 
-<span class="check-box">✓</span>
+            <textarea
+                name="Past Result"
+                placeholder="Enter previous examination result or percentage"></textarea>
 
-<span>School Exam Preparation</span>
+        </div>
 
-</label>
-
-
-<label class="reason-item">
-
-<input
-type="checkbox"
-name="Reason"
-value="Board Exam Preparation">
-
-<span class="check-box">✓</span>
-
-<span>Board Exam Preparation</span>
-
-</label>
-
-
-<label class="reason-item">
-
-<input
-type="checkbox"
-name="Reason"
-value="Marks Improve">
-
-<span class="check-box">✓</span>
-
-<span>Marks Improve</span>
-
-</label>
-
-
-<label class="reason-item">
-
-<input
-type="checkbox"
-name="Reason"
-value="Homework/Regular Study">
-
-<span class="check-box">✓</span>
-
-<span>Homework / Regular Study</span>
-
-</label>
-
-
-<label class="reason-item">
-
-<input
-type="checkbox"
-name="Reason"
-value="Competitive Preparation">
-
-<span class="check-box">✓</span>
-
-<span>Competitive Preparation</span>
-
-</label>
+    </div>
 
 </div>
 
 
-<!-- ===== SUBMIT ===== -->
+<!-- ================= MAIN REASON ================= -->
 
-<button
-type="submit"
-class="premium-submit">
+<div class="form-section">
 
-<span>🚀</span>
+    <div class="section-title">
+        <div class="section-icon">🎯</div>
+        Main Reason for Taking Academy
+    </div>
 
-Submit Registration
+    <div class="section-subtitle">
+        Select the reason that best describes your requirement
+    </div>
 
+    <div class="divider"></div>
+
+
+    <div class="reason-box">
+
+
+        <label class="reason-option">
+
+            <input
+                type="checkbox"
+                name="Main Reason"
+                value="Basic Concepts Improve">
+
+            <span>
+                Basic Concepts Improve
+            </span>
+
+        </label>
+
+
+        <label class="reason-option">
+
+            <input
+                type="checkbox"
+                name="Main Reason"
+                value="School Exam Preparation">
+
+            <span>
+                School Exam Preparation
+            </span>
+
+        </label>
+
+
+        <label class="reason-option">
+
+            <input
+                type="checkbox"
+                name="Main Reason"
+                value="Board Exam Preparation">
+
+            <span>
+                Board Exam Preparation
+            </span>
+
+        </label>
+
+
+        <label class="reason-option">
+
+            <input
+                type="checkbox"
+                name="Main Reason"
+                value="Marks Improve">
+
+            <span>
+                Marks Improve
+            </span>
+
+        </label>
+
+
+        <label class="reason-option">
+
+            <input
+                type="checkbox"
+                name="Main Reason"
+                value="Homework / Regular Study">
+
+            <span>
+                Homework / Regular Study
+            </span>
+
+        </label>
+
+
+        <label class="reason-option">
+
+            <input
+                type="checkbox"
+                name="Main Reason"
+                value="Competitive Preparation">
+
+            <span>
+                Competitive Preparation
+            </span>
+
+        </label>
+
+
+    </div>
+
+</div>
+
+
+<!-- ================= ADDITIONAL MESSAGE ================= -->
+
+<div class="form-section">
+
+    <div class="section-title">
+        <div class="section-icon">💬</div>
+        Additional Information
+    </div>
+
+    <div class="section-subtitle">
+        Any additional information you would like to share
+    </div>
+
+    <div class="divider"></div>
+
+    <textarea
+        name="Additional Information"
+        placeholder="Write anything else you would like us to know..."></textarea>
+
+</div>
+
+
+<!-- ================= SUBMIT ================= -->
+
+<button type="submit" class="submit-btn">
+    📝 Submit Registration
 </button>
 
-
-<p class="secure-text">
-
-🔒 Your information is securely submitted to Chandel Academy.
-
-</p>
 
 </form>
 
 </div>
 
+
+<!-- ================= FOOTER ================= -->
+
+<div class="footer">
+
+    © 2026 <strong>Chandel Academy</strong> |
+    All Rights Reserved
+
 </div>
 
-</section>
 
+</body>
 
-<!-- ===== PREMIUM REGISTRATION CSS ===== -->
-
-<style>
-
-.registration-wrapper{
-
-max-width:1000px;
-
-margin:auto;
-
-}
-
-
-/* ===== BRAND ===== */
-
-.registration-brand{
-
-text-align:center;
-
-margin-bottom:35px;
-
-}
-
-
-.registration-logo{
-
-width:105px;
-
-height:105px;
-
-margin:0 auto 15px;
-
-padding:8px;
-
-background:white;
-
-border-radius:50%;
-
-box-shadow:
-0 0 15px rgba(255,215,0,0.5),
-0 0 40px rgba(255,215,0,0.2);
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-}
-
-
-.registration-logo img{
-
-width:100%;
-
-height:100%;
-
-object-fit:contain;
-
-border-radius:50%;
-
-}
-
-
-.registration-brand h2{
-
-font-size:38px;
-
-color:#FFD700;
-
-margin-bottom:3px;
-
-}
-
-
-.brand-tagline{
-
-font-size:15px;
-
-letter-spacing:3px;
-
-color:#aaa;
-
-}
-
-
-.brand-line{
-
-width:80px;
-
-height:3px;
-
-background:#FFD700;
-
-margin:15px auto;
-
-border-radius:10px;
-
-}
-
-
-.registration-brand h3{
-
-font-size:28px;
-
-color:white;
-
-margin-top:15px;
-
-}
-
-
-.brand-description{
-
-color:#aaa;
-
-margin-top:8px;
-
-font-size:15px;
-
-}
-
-
-/* ===== CARD ===== */
-
-.registration-card{
-
-background:
-linear-gradient(
-145deg,
-rgba(255,255,255,0.07),
-rgba(255,255,255,0.025)
-);
-
-padding:45px;
-
-border-radius:28px;
-
-border:1px solid rgba(255,215,0,0.18);
-
-box-shadow:
-
-0 20px 60px rgba(0,0,0,0.3),
-
-0 0 35px rgba(255,215,0,0.08);
-
-backdrop-filter:blur(15px);
-
-}
-
-
-/* ===== SECTION TITLE ===== */
-
-.form-section-title{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-margin:10px 0 25px;
-
-padding-bottom:14px;
-
-border-bottom:1px solid rgba(255,215,0,0.18);
-
-}
-
-
-.form-section-title > span{
-
-width:48px;
-
-height:48px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-background:rgba(255,215,0,0.1);
-
-border:1px solid rgba(255,215,0,0.25);
-
-border-radius:14px;
-
-font-size:23px;
-
-}
-
-
-.form-section-title h3{
-
-color:#FFD700;
-
-font-size:21px;
-
-margin-bottom:3px;
-
-}
-
-
-.form-section-title p{
-
-font-size:12px;
-
-color:#888;
-
-}
-
-
-/* ===== GRID ===== */
-
-.form-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:20px;
-
-}
-
-
-.form-group{
-
-margin-bottom:20px;
-
-}
-
-
-.form-group label{
-
-display:block;
-
-font-size:14px;
-
-font-weight:500;
-
-color:#eee;
-
-margin-bottom:8px;
-
-}
-
-
-.form-group label span{
-
-color:#FFD700;
-
-}
-
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-
-width:100%;
-
-padding:15px 16px;
-
-background:rgba(0,0,0,0.22);
-
-border:1px solid rgba(255,255,255,0.12);
-
-border-radius:13px;
-
-outline:none;
-
-color:white;
-
-font-size:14px;
-
-transition:0.3s;
-
-}
-
-
-.form-group input::placeholder,
-.form-group textarea::placeholder{
-
-color:#777;
-
-}
-
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-
-border-color:#FFD700;
-
-box-shadow:0 0 15px rgba(255,215,0,0.12);
-
-}
-
-
-.form-group select option{
-
-background:#06111f;
-
-color:white;
-
-}
-
-
-.form-group textarea{
-
-resize:vertical;
-
-min-height:100px;
-
-}
-
-
-/* ===== REASON ===== */
-
-.reason-grid{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:12px;
-
-margin-bottom:25px;
-
-}
-
-
-.reason-item{
-
-display:flex;
-
-align-items:center;
-
-gap:12px;
-
-padding:15px;
-
-border-radius:13px;
-
-background:rgba(255,255,255,0.035);
-
-border:1px solid rgba(255,255,255,0.08);
-
-color:#ddd;
-
-font-size:14px;
-
-cursor:pointer;
-
-transition:0.3s;
-
-}
-
-
-.reason-item:hover{
-
-border-color:rgba(255,215,0,0.5);
-
-background:rgba(255,215,0,0.07);
-
-}
-
-
-.reason-item input{
-
-display:none;
-
-}
-
-
-.check-box{
-
-width:20px;
-
-height:20px;
-
-border:2px solid #777;
-
-border-radius:5px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:13px;
-
-color:transparent;
-
-transition:0.3s;
-
-}
-
-
-.reason-item input:checked + .check-box{
-
-background:#FFD700;
-
-border-color:#FFD700;
-
-color:#000;
-
-}
-
-
-/* ===== BUTTON ===== */
-
-.premium-submit{
-
-width:100%;
-
-border:none;
-
-outline:none;
-
-padding:17px;
-
-margin-top:15px;
-
-border-radius:14px;
-
-background:linear-gradient(135deg,#FFD700,#ffb700);
-
-color:#000;
-
-font-size:18px;
-
-font-weight:700;
-
-cursor:pointer;
-
-box-shadow:0 10px 25px rgba(255,215,0,0.2);
-
-transition:0.3s;
-
-}
-
-
-.premium-submit:hover{
-
-transform:translateY(-3px);
-
-box-shadow:0 15px 35px rgba(255,215,0,0.35);
-
-}
-
-
-.premium-submit span{
-
-margin-right:8px;
-
-}
-
-
-/* ===== SECURITY TEXT ===== */
-
-.secure-text{
-
-text-align:center;
-
-color:#777;
-
-font-size:12px;
-
-margin-top:17px;
-
-}
-
-
-/* ===== MOBILE ===== */
-
-@media(max-width:768px){
-
-.registration-card{
-
-padding:25px 18px;
-
-border-radius:20px;
-
-}
-
-
-.registration-brand h2{
-
-font-size:30px;
-
-}
-
-
-.registration-brand h3{
-
-font-size:22px;
-
-}
-
-
-.form-grid{
-
-grid-template-columns:1fr;
-
-gap:0;
-
-}
-
-
-.reason-grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-.registration-logo{
-
-width:90px;
-
-height:90px;
-
-}
-
-
-}
-
-</style>
-<style>
-
-/* ===== EXTRA VISIBILITY IMPROVEMENT ===== */
-
-.registration-card{
-    background:rgba(8,18,32,0.96) !important;
-    color:#ffffff !important;
-}
-
-/* Section headings */
-
-.form-section-title h3{ 
-    color:#FFD700 !important;
-    font-weight:700 !important;
-}
-
-.form-section-title p{
-    color:#d5d5d5 !important;
-}
-
-/* Labels */
-
-.form-group label{
-    color:#ffffff !important;
-    font-size:15px !important;
-    font-weight:600 !important;
-}
-
-.form-group label span{
-    color:#FFD700 !important;
-}
-
-/* Input / Select / Textarea */
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-    background:#101f31 !important;
-    color:#ffffff !important;
-    border:1px solid #526173 !important;
-    font-size:15px !important;
-    font-weight:500 !important;
-}
-
-/* Typed text */
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-    background:#14263b !important;
-    color:#ffffff !important;
-    border:2px solid #FFD700 !important;
-    box-shadow:0 0 12px rgba(255,215,0,0.2) !important;
-}
-
-/* Placeholder */
-
-.form-group input::placeholder,
-.form-group textarea::placeholder{
-    color:#c5cbd3 !important;
-    opacity:1 !important;
-}
-
-/* Dropdown */
-
-.form-group select{
-    color:#ffffff !important;
-    cursor:pointer;
-}
-
-.form-group select option{
-    background:#0b1726 !important;
-    color:#ffffff !important;
-}
-
-/* Reason heading */
-
-.registration-brand h2{
-    color:#FFD700 !important;
-    font-weight:700 !important;
-}
-
-.registration-brand h3{
-    color:#ffffff !important;
-    font-weight:700 !important;
-}
-
-.registration-brand p{
-    color:#e0e0e0 !important;
-}
-
-/* Reason boxes */
-
-.reason-item{
-    background:#101f31 !important;
-    color:#ffffff !important;
-    border:1px solid #526173 !important;
-    font-size:15px !important;
-    font-weight:500 !important;
-}
-
-.reason-item:hover{
-    background:#172b42 !important;
-    border-color:#FFD700 !important;
-    color:#ffffff !important;
-}
-
-.reason-item span{
-    color:#ffffff !important;
-}
-
-/* Checked reason */
-
-.reason-item input:checked + .check-box{
-    background:#FFD700 !important;
-    border-color:#FFD700 !important;
-    color:#000000 !important;
-}
-
-/* Security text */
-
-.secure-text{
-    color:#cfd4da !important;
-    font-size:13px !important;
-}
-
-/* Submit button */
-
-.premium-submit{
-    color:#000000 !important;
-    background:linear-gradient(135deg,#FFD700,#ffbd00) !important;
-    font-weight:700 !important;
-}
-
-/* Mobile visibility */
-
-@media(max-width:768px){
-
-    .form-group label{
-        font-size:15px !important;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea{
-        font-size:15px !important;
-        padding:15px !important;
-    }
-
-    .reason-item{
-        font-size:15px !important;
-    }
-
-}
-
-</style>
+</html>
